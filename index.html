@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="card">
+        <div id="loading" class="loading-spinner" style="display:none;"></div>
+        <div id="search">
+            <input id="city-name-input" type="text" placeholder="Enter city name" , spellcheck="false">
+            <button id="search-button">
+                <img src="images/search.png">
+            </button>
+        </div>
+        <h1 id="temp">Temperature</h1>
+        <h1 id="city">City Name</h1>
+        <div id="humidity-speed-row">
+            <div id="humidity-column">
+                <h1 id="humidity">---</h1>
+                <h1>Humidity</h1>
+            </div>
+            <div id="speed-column">
+                <h1 id="wind-speed">----</h1>
+                <h1>Wind Speed</h1>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <footer>
+        <p>This project is using <a href="https://openweathermap.org">OpenWeather</a> API.</p>
+    </footer>
+</body>
+
+</html>
